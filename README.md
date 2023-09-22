@@ -12,8 +12,10 @@ Figure (a) shows the wavefield from the TD-PINN, and Figure (b) shows the wavefi
 # Code explanation
 
 pre-training.ipynb: Stage1-pretraining
+
 train_full.ipynb: Stage2-Full training
-tra_physics.ipynb: Stage3-Physics enhanced training
+
+train_physics.ipynb: Stage3-Physics enhanced training
 
 # Citation information
 
