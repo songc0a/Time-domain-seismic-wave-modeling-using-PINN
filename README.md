@@ -15,7 +15,7 @@ pre-training.ipynb: Stage1-pretraining
 
 train_full.ipynb: Stage2-Full training
 
-train_physics.ipynb: Stage3-Physics enhanced training
+tra_physics.ipynb: Stage3-Physics enhanced training
 
 # Citation information
 
