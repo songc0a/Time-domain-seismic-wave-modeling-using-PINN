@@ -6,30 +6,25 @@ This repository gives the codes for numerical solver independent seismic wave si
 
 We propose a task-decomposed (TD) training scheme of Physics-informed Neural Network (PINN) to perform the time-domain wave equation modeling. Besides this feature, we use analytical wavefield solutions (Fourier transformed from frequency-domain ones) as the initial condition to avoid the source singularity issue. 
 
-Figure a shows the wavefield from the TD-PINN, and Figure b shows the wavefield from the finite-difference method (FDM).
-![wavefield_com](https://github.com/songc0a/Time-domain-seismic-wave-modeling-using-PINN/assets/31889731/647347b2-de24-4497-b7df-1e9fcb6fa288)
-
-
+Figure (a) shows the wavefield from the TD-PINN, and Figure (b) shows the wavefield from the finite-difference method (FDM).
+![TDPINN_wavefie_gif](https://github.com/songc0a/Time-domain-seismic-wave-modeling-using-PINN/assets/31889731/a6a7bd80-e95c-4627-83e5-77b4371a7c8b)
 
 # Code explanation
 
-helm_solver_ffpinn_4D.py: Tensorflow code for solving the multifrequency-multisource scattered wavefields using Fourier feature PINN  
-helm_solver_ffpinn_4D_test.py: Tensorflow code for a new velocity using the saved model
-Sigsbee_sourceinput_data_generation_fre.m: Matlab code for generating training and test data  
+pre-training.ipynb: Stage1-pretraining
+train_full.ipynb: Stage2-Full training
+tra_physics.ipynb: Stage3-Physics enhanced training
 
 # Citation information
 
 If you find our codes and publications helpful, please kindly cite the following publications.
 
-@article{song2023simulating,
-  title={Simulating seismic multifrequency wavefields with the Fourier feature physics-informed neural network},
-  author={Song, Chao and Wang, Yanghua},
-  journal={Geophysical Journal International},
-  volume={232},
-  number={3},
-  pages={1503--1514},
+@article{zou2023numerical,
+  title={Numerical solver independent seismic wave simulation using Task-decomposed Physics-informed Neural Networks},
+  author={Zou, Jingbo and Liu, Cai and Song, Chao and Zhao, Pengfei},
+  journal={IEEE Geoscience and Remote Sensing Letters},
   year={2023},
-  publisher={Oxford University Press}
+  publisher={IEEE}
 }
 
 # contact information
